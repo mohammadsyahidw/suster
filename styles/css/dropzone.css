@@ -1,97 +1,67 @@
-/*
-Styles for HTML5 File Drag & Drop demonstration
-Featured on SitePoint.com
-Developed by Craig Buckler (@craigbuckler) of OptimalWorks.net
-*/
-body
+#dragandrophandler
 {
-  font-family: "Segoe UI", Tahoma, Helvetica, freesans, sans-serif;
-  font-size: 90%;
-  margin: 10px;
-  color: #333;
-  background-color: #fff;
+border:2px dotted #0B85A1;
+width:100%;
+height:100px;
+color:#92AAB0;
+text-align:left;vertical-align:middle;
+padding: 10px;
+margin-bottom:10px;
+font-size:200%;
 }
-
-h1, h2
+.progressBar {
+    width: 200px;
+    height: 22px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    overflow: hidden;
+    display:inline-block;
+    margin:0px 10px 5px 5px;
+    vertical-align:top;
+}
+ 
+.progressBar div {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #0ba1b5; border-radius: 3px; 
+}
+.statusbar
 {
-  font-size: 1.5em;
-  font-weight: normal;
+    border-top:1px solid #A9CCD1;
+    min-height:25px;
+    width:100%;
+    padding:10px 10px 0px 10px;
+    vertical-align:top;
 }
-
-h2
+.statusbar:nth-child(odd){
+    background:#EBEFF0;
+}
+.filename
 {
-  font-size: 1.3em;
+display:inline-block;
+vertical-align:top;
+width:250px;
 }
-
-legend
+.filesize
 {
-  font-weight: bold;
-  color: #333;
+display:inline-block;
+vertical-align:top;
+color:#30693D;
+width:100px;
+margin-left:10px;
+margin-right:5px;
 }
-
-#filedrag
-{
-  display: none;
-  font-weight: bold;
-  text-align: center;
-  padding: 1em 0;
-  margin: 1em 0;
-  color: #555;
-  border: 2px dashed #555;
-  border-radius: 7px;
-  cursor: default;
-}
-
-#filedrag.hover
-{
-  color: #f00;
-  border-color: #f00;
-  border-style: solid;
-  box-shadow: inset 0 3px 4px #888;
-}
-
-img
-{
-  max-width: 100%;
-}
-
-pre
-{
-  width: 95%;
-  height: 8em;
-  font-family: monospace;
-  font-size: 0.9em;
-  padding: 1px 2px;
-  margin: 0 0 1em auto;
-  border: 1px inset #666;
-  background-color: #eee;
-  overflow: auto;
-}
-
-#messages
-{
-  padding: 0 10px;
-  margin: 1em 0;
-  border: 1px solid #999;
-}
-
-#progress p
-{
-  display: block;
-  width: 240px;
-  padding: 2px 5px;
-  margin: 2px 0;
-  border: 1px inset #446;
-  border-radius: 5px;
-  background: #eee url("progress.png") 100% 0 repeat-y;
-}
-
-#progress p.success
-{
-  background: #0c0 none 0 0 no-repeat;
-}
-
-#progress p.failed
-{
-  background: #c00 none 0 0 no-repeat;
-}
+.abort{
+    background-color:#A8352F;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;display:inline-block;
+    color:#fff;
+    font-family:arial;font-size:13px;font-weight:normal;
+    padding:4px 15px;
+    cursor:pointer;
+    vertical-align:top
+    }

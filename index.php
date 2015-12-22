@@ -3,7 +3,8 @@
   <head>
 
     <link type="text/css" rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css"  media="screen,projection"/>
-
+    <link type="text/css" rel="stylesheet" href="styles/css/dropzone.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="styles/style.css"  media="screen,projection"/>
 
     
@@ -18,10 +19,12 @@
     <div class='row'>
       <div class="col-md-3">
         <div class='pilih-berkas border text-center'>      
-            <div class='seret-file'>
-              <h4>Seret Berkas Disini</h4>
+            <div id="dragandrophandler">
+                <center><h4>Seret Berkas Di Sini</h4></center>
             </div>
-            <button class='btn btn-default'>Pilih Berkas</button>
+            <input type='file' title="foo">
+            <div id="statusbar" class="table-responsive"></div>
+            <button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button>
         </div>
         <div class='list-file'>
           <div class='file border'>
@@ -63,12 +66,12 @@
       <div class="col-md-6">
         <div class='preview text-center'>
           <h3>Berkas1.pdf</h3>
-          <div class='gambar-berkas'>
-            <img src="">
+          <div >
+            <img id="gambarberkas" class='gambar-berkas' src="">
           </div>          
-          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
           <span>Halaman</span>
-          <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          <a id="keHalamanKanan" href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
         </div>
         
       </div>
@@ -154,4 +157,6 @@
 
 
   </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="styles/js/dropzone.js"></script>
 </html>

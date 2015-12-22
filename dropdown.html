@@ -124,8 +124,8 @@ function createStatusbar(obj)
      this.size = $("<div class='filesize'></div>").appendTo(this.statusbar);
      this.progressBar = $("<div class='progressBar'><div></div></div>").appendTo(this.statusbar);
      this.abort = $("<div class='abort'>Abort</div>").appendTo(this.statusbar);
-     obj.after(this.statusbar);
- 
+    // obj.after(this.statusbar);
+ 	 document.getElementById("statusbar").innerHTML = this.statusbar;
     this.setFileNameSize = function(name,size)
     {
         var sizeStr="";
