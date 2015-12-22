@@ -1,0 +1,39 @@
+body{
+  /*font-family: Bariol;*/
+}
+.border{
+  border-style: solid;
+  border-width: 2px;
+}
+.pilih-berkas{
+  padding: 10px;
+}
+.seret-file{
+  padding: 50px 0px;
+}
+.list-file{
+  margin-top: 10px;
+}
+.file{
+  padding: 30px 0px;
+}
+.file .row{
+  margin: 0px;
+}
+.file .row .isi-file{
+  padding: 0px 20px; 
+}
+.gambar-berkas{
+  
+}
+.profil{
+  padding: 10px;
+}
+.pengaturan{
+  margin-top: 10px;
+  padding: 0px 40px;
+}
+.harga{
+  margin-top: 10px;
+  padding: 0px 40px;
+}
