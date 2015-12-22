@@ -27,45 +27,38 @@
             <button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button>
         </div>
         <div class='list-file'>
-          <div class='file border'>
-            <div class='row'>
-              <div class='col-md-6 isi-file text-center'>
-                <h4>Berkas1.pdf</h4>
-                <h5>( 3 halaman )</h5>
-              </div>
-              <div class='col-md-6 isi-file text-center'>
-                <h5>Sudah Tercetak</h5>
-              </div>
+          <div id="history1" class='file border' hidden>
+            <div class="row table-responsive">
+              <table class="table">
+                <thead>
+                  <tr id="contentHistory">
+                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf<br>(2 halaman)</h4></a></th>                    
+                    <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
+                    <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
+                  </tr>
+                </thead>
+              </table>
             </div>
           </div>
-          <div class='file border'>
-            <div class='row'>
-              <div class='col-md-6 isi-file text-center'>
-                <h4>Berkas1.pdf</h4>
-                <h5>( 3 halaman )</h5>
-              </div>
-              <div class='col-md-6 isi-file text-center'>
-                <h5>Sudah Tercetak</h5>
-              </div>
+          <div id="history2"class='file border' hidden>
+            <div class="row table-responsive">
+              <table class="table">
+                <thead>
+                  <tr id="contentHistory">
+                    <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>                    
+                    <th><h5 id="statusHistory2">Belum Tercetak</h5></th>
+                    <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
+                  </tr>
+                </thead>
+              </table>
             </div>
-          </div>
-          <div class='file border'>
-            <div class='row'>
-              <div class='col-md-6 isi-file text-center'>
-                <h4>Berkas1.pdf</h4>
-                <h5>( 3 halaman )</h5>
-              </div>
-              <div class='col-md-6 isi-file text-center'>
-                <h5>Sudah Tercetak</h5>
-              </div>
-            </div>
-          </div>
+          </div>      
         </div>
       </div>
       
       <div class="col-md-6">
-        <div class='preview text-center'>
-          <h3>Berkas1.pdf</h3>
+        <div  class='preview text-center'>
+          <h3 id="judulPrintPreview">Berkas1.pdf</h3>
           <div >
             <img id="gambarberkas" class='gambar-berkas' src="">
           </div>          
@@ -80,22 +73,23 @@
         <div class='profil border text-center'>
           <div>Mohamad Syahid Wildan</div>
           <div>
-              <h3>Saldo: <span class='label label-default'>Rp 5000</span></h3>
+              <h3>Saldo: <span id="saldo" class='label label-default'>Rp 5000</span></h3>
           </div>
         </div>
 
-        <div class='pengaturan border'>
+        <div id="pengaturan" class='pengaturan border' hidden>
+        <form role='form'>
           <h3 class='text-center'>Pengaturan</h3>
           <div class='warna'>
             <div class="radio">
               <label>
-                <input type="radio" id="optionsRadios1" value="option1" checked>
+                <input type="radio" id="optionsRadios1" value="option1" name="pengaturanWarna" checked>
                 Hitam Putih
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" id="optionsRadios2" value="option2">
+                <input type="radio" id="optionsRadios2" value="option2" name="pengaturanWarna">
                 Berwarna
               </label>
             </div>
@@ -104,13 +98,13 @@
           <div class='halaman'>
             <div class="radio">
               <label>
-                <input type="radio" id="optionsRadios1" value="option1" checked>
+                <input type="radio" id="optionsRadios1" value="option1" name="pengaturanHalaman" checked>
                 Semua Halaman
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" id="optionsRadios2" value="option2">
+                <input type="radio" id="optionsRadios2" value="option2" name="pengaturanHalaman">
                 Pilih Halaman
               </label>
             </div>
@@ -131,17 +125,18 @@
               </label>
             </div>
           </div>
+          </form>
         </div>
 
-        <div class='harga border text-center'>          
+        <div id="print" class='harga border text-center' hidden>          
           <div class='print'>
 
             <div>
-              <h3>Harga: <span class='label label-default'>Rp 5000</span></h3>
+              <h3>Harga: <span class='label label-default'>Rp 1000</span></h3>
             </div>
-            <button class='btn btn-default btn-lg'>PRINT</button>
+            <button id="printButton" class='btn btn-default btn-lg'>PRINT</button>
           </div>
-          <div class='print-lagi'>
+          <div class='print-lagi' hidden>
             <div>
               <h3>Harga: <span class='label label-default'>Rp 5000</span></h3>
               <div>

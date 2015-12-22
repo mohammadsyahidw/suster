@@ -18,7 +18,7 @@ function sendFileToServer(formData,status)
                             percent = Math.ceil(position / total * 100);
                         }
                         //Set progress
-                        status.setProgress(percent);
+                        // status.setProgress(percent);
                     }, false);
                 }
             return xhrobj;
@@ -55,11 +55,7 @@ function createStatusbar(obj)
      var obj1 = $("#statusbar");
      obj1.html(this.statusbar);
      $("#unggahBerkas").show();
-     $("#unggahBerkas").click(function(){     
-        $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
-         $("#statusbar").html("");
-         $("#unggahBerkas").hide();
-    })
+     
 
     this.setFileNameSize = function(name,size)
     {
@@ -74,18 +70,13 @@ function createStatusbar(obj)
         {
             sizeStr = sizeKB.toFixed(2)+" KB";
         }
- 
-        this.filename.html(name);
-    }
-    
-    this.setProgress = function(progress)
-    {       
-        var progressBarWidth =progress*this.progressBar.width()/ 100;  
-        this.progressBar.find('div').animate({ width: progressBarWidth }, 10).html(progress + "% ");
-        if(parseInt(progress) >= 100)
-        {
-            this.abort.hide();
+        yangDilihatSekarang = name;
+        if(counterGlobal++==0){
+          unggahBerkas(name);
         }
+          
+        
+        this.filename.html(name);
     }
     this.setAbort = function(jqxhr)
     {
@@ -113,12 +104,62 @@ function handleFileUpload(files,obj)
  
    }
 }
+
+function unggahBerkas(namefile){
+  console.log("masuk");
+  $("#unggahBerkas").click(function(){
+       
+       if(!isHistory1Hidden && !isHistory2Hidden){
+          alert("ga bisa lebih dari 2");
+       }
+       else{
+          if(isHistory1Hidden){
+            $("#history1").show();
+            $("#judulHistory1").html(yangDilihatSekarang);
+            yangDilihatSekarangDok = 1;
+            $("#judulHistory1").attr("style", "color:red");
+            $("#judulHistory2").attr("style", "color:black");
+            isHistory1Hidden = false;
+            console.log("satu"); 
+          }
+          else if(isHistory2Hidden){
+            $("#history2").show();
+            $("#judulHistory2").html(yangDilihatSekarang);
+            isHistory2Hidden = false;
+            yangDilihatSekarangDok = 2;
+            $("#judulHistory1").attr("style", "color:black");
+            $("#judulHistory2").attr("style", "color:red");
+            console.log("dua");
+          }
+          $("#judulPrintPreview").html(yangDilihatSekarang);
+          $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
+          $("#statusbar").html("");
+          $("#unggahBerkas").hide();
+          $("#pengaturan").show();
+          $("#print").show();  
+       } 
+       
+       
+  })  
+  
+   
+  
+}
+
+
+
+
+var isHistory1Hidden = true;
+var isHistory2Hidden = true;
+var yangDilihatSekarang = "";
+var yangDilihatSekarangDok = 0;
+var counterGlobal = 0;
+var saldo = 2000;
+
 $(document).ready(function()
 {
 var obj = $("#dragandrophandler");
-var fileHasChoosen = false;
 
-$("#unggahBerkas").hide();
 obj.on('dragenter', function (e) 
 {
     e.stopPropagation();
@@ -157,12 +198,23 @@ $(document).on('drop', function (e)
     e.preventDefault();
 });
 
+//--------------yang wildan koding-------------------------
+var fileHasChoosen = false;
+
+$("#unggahBerkas").hide();
+
 $('#choosefile').click(function () {
     $("input[type='file']").trigger('click');
 })
 
-
-
+$("#deleteHistoryFile-1").click(function(){
+  $("#history1").hide();
+  isHistory1Hidden = true;
+})
+$("#deleteHistoryFile-2").click(function(){
+  $("#history2").hide();
+  isHistory2Hidden = true;
+})
 $("input[type='file']").change(function () {
     var namefile = this.value.replace(/C:\\fakepath\\/i, '');
     var content = "<table class='table odd'><thead><tr><th>"+namefile+"</th><th><a id='memilihFile' href='#''><i class='fa fa-times'></i></a></th></tr></thead></table>";
@@ -172,23 +224,54 @@ $("input[type='file']").change(function () {
         $("#statusbar").html("");
         $("#unggahBerkas").hide();
     })
-    $("#unggahBerkas").click(function(){
-        $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
-         $("#statusbar").html("");
-         $("#unggahBerkas").hide();
-    })
+    yangDilihatSekarang = namefile;
+    if(counterGlobal++==0){
+      unggahBerkas(namefile);  
+    }
 })
 
+$("#saldo").html("Rp " + saldo); 
 $("#keHalamanKanan").click(function(){
-  if(fileHasChoosen){
+  if(!fileHasChoosen){
     $("#gambarberkas").attr("src", "styles/js/CIMG0082.jpg");
   }
 })
 
 $("#keHalamanKiri").click(function(){
-  if(fileHasChoosen){
+  if(!fileHasChoosen){
     $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
   }
+})
+
+$("#printButton").click(function(){
+  if(saldo <1000){
+    alert("saldo kurang");
+  }
+  else
+  {
+    saldo = saldo - 1000;
+    $("#statusHistory"+yangDilihatSekarangDok).html("tercetak");
+    $("#saldo").html("Rp "+saldo);  
+  }
+  
+})
+
+$("#judulHistory1").click(function(){
+    yangDilihatSekarangDok = 1;
+    yangDilihatSekarang = $("#judulHistory1").html();
+    $("#judulHistory1").attr("style", "color:red");
+    $("#judulHistory2").attr("style", "color:black");
+    $("#judulPrintPreview").html(yangDilihatSekarang);
+    $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
+})
+
+$("#judulHistory2").click(function(){
+    yangDilihatSekarangDok = 2;
+    yangDilihatSekarang = $("#judulHistory2").html();
+    $("#judulHistory2").attr("style", "color:red");
+    $("#judulHistory1").attr("style", "color:black");
+    $("#judulPrintPreview").html(yangDilihatSekarang);
+    $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
 })
 
 });
