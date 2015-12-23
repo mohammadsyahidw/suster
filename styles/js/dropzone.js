@@ -132,7 +132,7 @@ function unggahBerkas(namefile){
             console.log("dua");
           }
           $("#judulPrintPreview").html(yangDilihatSekarang);
-          $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
+          $("#gambarberkas").attr("src", fotoHalamanSatu);
           $("#statusbar").html("");
           $("#unggahBerkas").hide();
           $("#pengaturan").show();
@@ -149,12 +149,15 @@ function unggahBerkas(namefile){
 
 
 
-var isHistory1Hidden = true;
+var isHistory1Hidden = false;
 var isHistory2Hidden = true;
-var yangDilihatSekarang = "";
-var yangDilihatSekarangDok = 0;
+var yangDilihatSekarang = "Berkas1.pdf";
+var yangDilihatSekarangDok = 1;
 var counterGlobal = 0;
 var saldo = 2000;
+var fotoHalamanSatu = "assets/halaman1.JPG"
+var fotoHalamanDua = "assets/halaman2.JPG"
+
 
 $(document).ready(function()
 {
@@ -233,13 +236,13 @@ $("input[type='file']").change(function () {
 $("#saldo").html("Rp " + saldo); 
 $("#keHalamanKanan").click(function(){
   if(!fileHasChoosen){
-    $("#gambarberkas").attr("src", "styles/js/CIMG0082.jpg");
+    $("#gambarberkas").attr("src", fotoHalamanDua);
   }
 })
 
 $("#keHalamanKiri").click(function(){
   if(!fileHasChoosen){
-    $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
+    $("#gambarberkas").attr("src", fotoHalamanSatu);
   }
 })
 
@@ -262,7 +265,7 @@ $("#judulHistory1").click(function(){
     $("#judulHistory1").attr("style", "color:red");
     $("#judulHistory2").attr("style", "color:black");
     $("#judulPrintPreview").html(yangDilihatSekarang);
-    $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
+    $("#gambarberkas").attr("src", fotoHalamanSatu);
 })
 
 $("#judulHistory2").click(function(){
@@ -271,7 +274,7 @@ $("#judulHistory2").click(function(){
     $("#judulHistory2").attr("style", "color:red");
     $("#judulHistory1").attr("style", "color:black");
     $("#judulPrintPreview").html(yangDilihatSekarang);
-    $("#gambarberkas").attr("src", "styles/js/UserPhoto.jpg");
+    $("#gambarberkas").attr("src", fotoHalamanSatu);
 })
 
 });
