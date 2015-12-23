@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div id="pengaturan" class='pengaturan border' hidden>
+        <div id="pengaturan" class='pengaturan border'>
         <form role='form'>
           <h3 class='text-center'>Pengaturan</h3>
           <div class='warna'>
@@ -128,7 +128,7 @@
           </form>
         </div>
 
-        <div id="print" class='harga border text-center' hidden>          
+        <div id="print" class='harga border text-center'>          
           <div class='print'>
 
             <div>

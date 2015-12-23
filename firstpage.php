@@ -21,7 +21,7 @@
 	            </div>
 	            <input type='file' title="foo">
 	            <div id="statusbar" class="table-responsive"></div>
-	            <a href="index.php"><button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button></a>
+	            <a href="mainpage.php"><button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button></a>
 	        </div>
 		</div>
 	</body>
