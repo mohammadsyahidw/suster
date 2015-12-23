@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="styles/style.css"  media="screen,projection"/>
 
-    
+
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -18,7 +18,7 @@
   <body>
     <div class='row'>
       <div class="col-md-3">
-        <div class='pilih-berkas border text-center'>      
+        <div class='pilih-berkas border text-center'>
             <div id="dragandrophandler">
                 <center><h4>Seret Berkas Di Sini</h4></center>
             </div>
@@ -32,7 +32,7 @@
               <table class="table">
                 <thead>
                   <tr id="contentHistory">
-                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf<br>(2 halaman)</h4></a></th>                    
+                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf<br>(2 halaman)</h4></a></th>
                     <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
                     <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
                   </tr>
@@ -45,28 +45,28 @@
               <table class="table">
                 <thead>
                   <tr id="contentHistory">
-                    <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>                    
+                    <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>
                     <th><h5 id="statusHistory2">Belum Tercetak</h5></th>
                     <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
                   </tr>
                 </thead>
               </table>
             </div>
-          </div>      
+          </div>
         </div>
       </div>
-      
+
       <div class="col-md-6">
         <div  class='preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
           <div >
             <img id="gambarberkas" class='gambar-berkas' src="">
-          </div>          
+          </div>
           <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
           <span>Halaman</span>
           <a id="keHalamanKanan" href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
         </div>
-        
+
       </div>
 
       <div class="col-md-3">
@@ -109,7 +109,7 @@
               </label>
             </div>
             <div class="form">
-              <label> Halaman:  
+              <label> Halaman:
                 <input type="text" id="optionsRadios2" placeholder="1,2,3">
               </label>
             </div>
@@ -128,7 +128,7 @@
           </form>
         </div>
 
-        <div id="print" class='harga border text-center' hidden>          
+        <div id="print" class='harga border text-center' hidden>
           <div class='print'>
 
             <div>
@@ -145,7 +145,7 @@
               </div>
 
             </div>
-        
+
           </div>
         </div>
 

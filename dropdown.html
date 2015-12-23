@@ -16,20 +16,20 @@ font-size:200%;
     width: 200px;
     height: 22px;
     border: 1px solid #ddd;
-    border-radius: 5px; 
+    border-radius: 5px;
     overflow: hidden;
     display:inline-block;
     margin:0px 10px 5px 5px;
     vertical-align:top;
 }
- 
+
 .progressBar div {
     height: 100%;
     color: #fff;
     text-align: right;
     line-height: 22px; /* same as #progressBar height if we want text middle aligned */
     width: 0;
-    background-color: #0ba1b5; border-radius: 3px; 
+    background-color: #0ba1b5; border-radius: 3px;
 }
 .statusbar
 {
@@ -70,7 +70,7 @@ margin-right:5px;
     }
 </style>
 </head>
- 
+
 <body>
 <div id="dragandrophandler">Drag & Drop Files Here</div>
 <br><br>
@@ -105,14 +105,14 @@ function sendFileToServer(formData,status)
         data: formData,
         success: function(data){
             status.setProgress(100);
- 
-            $("#status1").append("File upload Done<br>");         
+
+            $("#status1").append("File upload Done<br>");
         }
-    }); 
- 
+    });
+
     status.setAbort(jqXHR);
 }
- 
+
 var rowCount=0;
 function createStatusbar(obj)
 {
@@ -139,13 +139,13 @@ function createStatusbar(obj)
         {
             sizeStr = sizeKB.toFixed(2)+" KB";
         }
- 
+
         this.filename.html(name);
         this.size.html(sizeStr);
     }
     this.setProgress = function(progress)
-    {       
-        var progressBarWidth =progress*this.progressBar.width()/ 100;  
+    {
+        var progressBarWidth =progress*this.progressBar.width()/ 100;
         this.progressBar.find('div').animate({ width: progressBarWidth }, 10).html(progress + "% ");
         if(parseInt(progress) >= 100)
         {
@@ -164,58 +164,58 @@ function createStatusbar(obj)
 }
 function handleFileUpload(files,obj)
 {
-   for (var i = 0; i < files.length; i++) 
+   for (var i = 0; i < files.length; i++)
    {
         var fd = new FormData();
         fd.append('file', files[i]);
- 
+
         var status = new createStatusbar(obj); //Using this we can set progress.
         status.setFileNameSize(files[i].name,files[i].size);
         sendFileToServer(fd,status);
- 
+
    }
 }
 $(document).ready(function()
 {
 var obj = $("#dragandrophandler");
-obj.on('dragenter', function (e) 
+obj.on('dragenter', function (e)
 {
     e.stopPropagation();
     e.preventDefault();
     $(this).css('border', '2px solid #0B85A1');
 });
-obj.on('dragover', function (e) 
+obj.on('dragover', function (e)
 {
      e.stopPropagation();
      e.preventDefault();
 });
-obj.on('drop', function (e) 
+obj.on('drop', function (e)
 {
- 
+
      $(this).css('border', '2px dotted #0B85A1');
      e.preventDefault();
      var files = e.originalEvent.dataTransfer.files;
- 
+
      //We need to send dropped files to Server
      handleFileUpload(files,obj);
 });
-$(document).on('dragenter', function (e) 
+$(document).on('dragenter', function (e)
 {
     e.stopPropagation();
     e.preventDefault();
 });
-$(document).on('dragover', function (e) 
+$(document).on('dragover', function (e)
 {
   e.stopPropagation();
   e.preventDefault();
   obj.css('border', '2px dotted #0B85A1');
 });
-$(document).on('drop', function (e) 
+$(document).on('drop', function (e)
 {
     e.stopPropagation();
     e.preventDefault();
 });
- 
+
 });
 </script>
 </body>
