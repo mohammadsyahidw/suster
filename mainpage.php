@@ -19,7 +19,7 @@
     <div class='row'>
       <div class="col-md-3">
         <div class='pilih-berkas border text-center'>
-            <div id="dragandrophandler">
+            <div id="dragandrophandler" >
                 <center><h4>Seret Berkas Di Sini</h4></center>
             </div>
             <input type='file' title="foo">
@@ -27,12 +27,12 @@
             <button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button>
         </div>
         <div class='list-file'>
-          <div id="history1" class='file border' hidden>
+          <div id="history1" class='file border'>
             <div class="row table-responsive">
               <table class="table">
                 <thead>
                   <tr id="contentHistory">
-                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf<br>(2 halaman)</h4></a></th>
+                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
                     <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
                     <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
                   </tr>
@@ -60,7 +60,7 @@
         <div  class='preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
           <div >
-            <img id="gambarberkas" class='gambar-berkas' src="">
+            <img id="gambarberkas" class='gambar-berkas' src="assets/halaman1.JPG">
           </div>
           <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
           <span>Halaman</span>
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div id="pengaturan" class='pengaturan border' hidden>
+        <div id="pengaturan" class='pengaturan border'>
         <form role='form'>
           <h3 class='text-center'>Pengaturan</h3>
           <div class='warna'>
@@ -128,7 +128,7 @@
           </form>
         </div>
 
-        <div id="print" class='harga border text-center' hidden>
+        <div id="print" class='harga border text-center'>          
           <div class='print'>
 
             <div>
@@ -152,6 +152,6 @@
 
 
   </body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="styles/js/jquery.min.js"></script>
   <script src="styles/js/dropzone.js"></script>
 </html>
