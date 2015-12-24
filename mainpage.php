@@ -34,7 +34,7 @@
 </nav>
     <div class='row'>
 
-      <div class="col-cus-3  border-cus" >
+      <div id="kolkiri" class="col-cus-3  border-cus">
         <div class='pilih-berkas text-center'>
             <div id="dragandrophandler" >
                 <center><h4>Seret Berkas Di Sini</h4></center>
@@ -91,7 +91,7 @@
 
       </div>
 
-      <div class="col-cusl-3 border-cus">
+      <div id="kolkanan" class="col-cusl-3 border-cusl">
         <div class='profil text-center'>
           <div>Mohamad Syahid Wildan</div>
           <div>
@@ -180,7 +180,6 @@
   <script src="styles/js/bootly.js"></script>
   <script>
   $(document).ready(function(){
-  $('.col-cus-3').height($(window).height()-50);
   $('.col-cusl-3').height($(window).height()-50);
   });
   </script>

@@ -9,9 +9,17 @@ body{
 }
 .border-cus{
   border-top-style: hidden;
-  border-left-style: solid;
+  border-left-style: hidden;
   border-right-style: solid;
-  border-bottom-style: solid;
+  border-bottom-style: hidden;
+  border-width: 3px;
+  border-color: #77CCDD;
+}
+.border-cusl{
+  border-top-style: hidden;
+  border-left-style: solid;
+  border-right-style: hidden;
+  border-bottom-style: hidden;
   border-width: 3px;
   border-color: #77CCDD;
 }
@@ -86,6 +94,10 @@ font-size:200%;
     vertical-align:top;
 }
 
+#kolkiri,
+#kolkanan{
+  height: 650px !important;
+}
 .progressBar div {
     height: 100%;
     color: #fff;

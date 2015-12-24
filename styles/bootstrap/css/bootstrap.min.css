@@ -1614,8 +1614,6 @@ pre code {
     margin-left: auto
 }
 .row {
-    margin-right: -15px;
-    margin-left: -15px
 }
 .col-lg-1,
 .col-lg-10,
@@ -1667,14 +1665,12 @@ pre code {
 .col-xs-9,
 .col-cusl-3 {
     position: relative;
-    min-height: 1px;
-    padding-right: 15px
+    min-height: 1px
 }
 .col-cus-3 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  height: 100%
+
 }
 .col-xs-1,
 .col-xs-10,
