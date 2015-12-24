@@ -10,13 +10,6 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<div class='jumbotron jumbotron-firstpage'>
-
-			<div class='container'>
-				<center><p>Selamat Datang di Octoprint, print online mahasiswa Fasilkom.</p></center>
-			</div>
-		</div>
-
 		<nav class="navbar navbar-static">
    <div class="container">
     <div class="navbar-header">
@@ -25,6 +18,7 @@
         <span class="glyphicon glyphicon-chevron-down"></span>
       </a>
     </div>
+
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-right navbar-nav">
             <li><a href="#">Logout</a></li>
@@ -32,12 +26,21 @@
       </div>
     </div>
 		</nav>
+		<div class='jumbotron jumbotron-firstpage'>
+
+			<div class='container'>
+				<center><p>Selamat Datang di Octoprint, print online mahasiswa Fasilkom.</p></center>
+			</div>
+		</div>
 		<div class='container'>
-			<div class='pilih-berkas border text-center'>
+			<div class='pilih-berkas text-center'>
 	            <div id="dragandrophandler" class="drag-drop-first-page">
 	                <center><h4>Seret Berkas Di Sini</h4></center>
 	            </div>
-	            <input type='file' title="foo">
+	            <!--<center><input type='file' title="foo"></center>-->
+							<span class="btn btn-default btn-file">
+    Browse <input type="file">
+</span>
 	            <div id="statusbar" class="table-responsive"></div>
 	            <a href="mainpage.php"><button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button></a>
 	        </div>

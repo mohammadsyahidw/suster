@@ -39,49 +39,53 @@
             <div id="dragandrophandler" >
                 <center><h4>Seret Berkas Di Sini</h4></center>
             </div>
-            <input type='file' title="foo">
+            <span class="btn btn-default btn-file">
+  Browse <input type="file">
+</span>
             <div id="statusbar" class="table-responsive"></div>
             <button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button>
         </div>
-        <div class='list-file'>
-          <div id="history1" class='file border'>
-            <div class="row table-responsive">
-              <table class="table">
-                <thead>
-                  <tr id="contentHistory">
-                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
-                    <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
-                    <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
-                  </tr>
-                </thead>
-              </table>
+        <div id="" style="overflow:scroll; height:400px; border-style: solid; border-width: 2px;">
+          <div class='list-file'>
+            <div id="history1" class='file'>
+              <div class="row table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr id="contentHistory">
+                      <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
+                      <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
+                      <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+            <div id="history2"class='file' hidden>
+              <div class="row table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr id="contentHistory">
+                      <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>
+                      <th><h5 id="statusHistory2">Belum Tercetak</h5></th>
+                      <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
             </div>
           </div>
-          <div id="history2"class='file border' hidden>
-            <div class="row table-responsive">
-              <table class="table">
-                <thead>
-                  <tr id="contentHistory">
-                    <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>
-                    <th><h5 id="statusHistory2">Belum Tercetak</h5></th>
-                    <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
-                  </tr>
-                </thead>
-              </table>
-            </div>
-          </div>
+
         </div>
       </div>
 
       <div class="col-md-6">
         <div  class='preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
-          <div >
+          <div>
+            <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
             <img id="gambarberkas" class='gambar-berkas' src="assets/halaman1.JPG">
+            <a id="keHalamanKanan" href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
           </div>
-          <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
-          <span>Halaman</span>
-          <a id="keHalamanKanan" href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
         </div>
 
       </div>

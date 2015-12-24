@@ -24,8 +24,7 @@ body{
   padding: 0px 0px;
 }
 .gambar-berkas{
-  width: 100%;
-  height: 550px;
+  height: 530px;
 }
 .profil{
   padding: 10px;
@@ -51,7 +50,8 @@ body{
 
 #dragandrophandler
 {
-border:2px dotted #0B85A1;
+border:3px dotted #0B85A1;
+border-radius: 30px;
 width:100%;
 height:100px;
 color:#92AAB0;
@@ -126,7 +126,7 @@ margin-right:5px;
 }
 
 .jumbotron.jumbotron-firstpage{
-  height: 150px;
+  height: 80px;
 }
 
 .fa-times:hover{
