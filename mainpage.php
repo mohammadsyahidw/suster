@@ -4,6 +4,7 @@
 
     <link type="text/css" rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="styles/css/dropzone.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="styles/css/bootly.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="styles/style.css"  media="screen,projection"/>
 
@@ -16,7 +17,23 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-static">
+   <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://www.bootply.com" target="ext"><b>Octoprint</b></a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="glyphicon glyphicon-chevron-down"></span>
+      </a>
+    </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-right navbar-nav">
+            <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
     <div class='row'>
+
       <div class="col-md-3">
         <div class='pilih-berkas border text-center'>
             <div id="dragandrophandler" >
@@ -128,7 +145,7 @@
           </form>
         </div>
 
-        <div id="print" class='harga border text-center'>          
+        <div id="print" class='harga border text-center'>
           <div class='print'>
 
             <div>
@@ -148,10 +165,12 @@
 
           </div>
         </div>
-
+      </div>
+    </div>
 
 
   </body>
   <script src="styles/js/jquery.min.js"></script>
   <script src="styles/js/dropzone.js"></script>
+  <script src="styles/js/bootly.js"></script>
 </html>
