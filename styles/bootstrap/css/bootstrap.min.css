@@ -1152,7 +1152,7 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee
+    border-top: 3px solid #77CCDD
 }
 .sr-only {
     position: absolute;
@@ -1227,7 +1227,7 @@ h6 small {
 h1,
 h2,
 h3 {
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 10px
 }
 .h1 .small,
@@ -1664,11 +1664,17 @@ pre code {
 .col-xs-6,
 .col-xs-7,
 .col-xs-8,
-.col-xs-9 {
+.col-xs-9,
+.col-cusl-3 {
     position: relative;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px
+    padding-right: 15px
+}
+.col-cus-3 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  height: 100%
 }
 .col-xs-1,
 .col-xs-10,
@@ -2018,6 +2024,8 @@ pre code {
     .col-md-6,
     .col-md-7,
     .col-md-8,
+    .col-cus-3,
+    .col-cusl-3,
     .col-md-9 {
         float: left
     }
@@ -2049,6 +2057,11 @@ pre code {
         width: 33.33333333%
     }
     .col-md-3 {
+        width: 25%
+    }
+
+    .col-cus-3,
+    .col-cusl-3 {
         width: 25%
     }
     .col-md-2 {
@@ -4264,7 +4277,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     border: 1px solid transparent
 }
 @media (min-width: 768px) {
