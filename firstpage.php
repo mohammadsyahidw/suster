@@ -10,32 +10,35 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<div class='jumbotron jumbotron-firstpage'>
+		
 
-			<div class='container'>
-				<center><p>Selamat Datang di Octoprint, print online mahasiswa Fasilkom.</p></center>
-			</div>
+	<nav class="navbar navbar-static">
+	   <div class="container">
+	    <div class="navbar-header">
+	      <p class="navbar-brand" ><b>Octoprint</b></p>
+	      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="glyphicon glyphicon-chevron-down"></span>
+	      </a>
+	    </div>
+	      <div class="navbar-collapse collapse">
+	        <ul class="nav navbar-right navbar-nav">
+	            <li><a href="#">Logout</a></li>
+	        </ul>
+	      </div>
+	    </div>
+    </nav>
+
+    <div class='jumbotron jumbotron-firstpage'>
+
+		<div class='container'>
+			<center><p>Selamat Datang di Octoprint, print online mahasiswa Fasilkom.</p></center>
 		</div>
+	</div>
 
-		<nav class="navbar navbar-static">
-   <div class="container">
-    <div class="navbar-header">
-      <p class="navbar-brand" ><b>Octoprint</b></p>
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="glyphicon glyphicon-chevron-down"></span>
-      </a>
-    </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-right navbar-nav">
-            <li><a href="#">Logout</a></li>
-        </ul>
-      </div>
-    </div>
-		</nav>
 		<div class='container'>
 			<div class='pilih-berkas border text-center'>
 	            <div id="dragandrophandler" class="drag-drop-first-page">
-	                <center><h4>Seret Berkas Di Sini</h4></center>
+	                <center><h2>Seret Berkas Di Sini</h2></center>
 	            </div>
 	            <input type='file' title="foo">
 	            <div id="statusbar" class="table-responsive"></div>

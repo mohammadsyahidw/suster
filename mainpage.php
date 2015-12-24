@@ -36,7 +36,7 @@
 
       <div class="col-md-3">
         <div class='pilih-berkas border text-center'>
-            <div id="dragandrophandler" >
+            <div id="dragandrophandler" class="drag-drop-mainpage">
                 <center><h4>Seret Berkas Di Sini</h4></center>
             </div>
             <input type='file' title="foo">
@@ -76,11 +76,11 @@
       <div class="col-md-6">
         <div  class='preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
-          <div >
+          <div class='preview-halaman'>
             <img id="gambarberkas" class='gambar-berkas' src="assets/halaman1.JPG">
           </div>
           <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
-          <span>Halaman</span>
+          <span class='halaman'>Halaman 1</span>
           <a id="keHalamanKanan" href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
         </div>
 

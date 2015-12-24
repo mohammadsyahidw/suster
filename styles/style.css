@@ -24,8 +24,8 @@ body{
   padding: 0px 0px;
 }
 .gambar-berkas{
-  width: 100%;
-  height: 550px;
+  /*width: 100%;*/
+  height: 520px;
 }
 .profil{
   padding: 10px;
@@ -34,9 +34,12 @@ body{
   margin-top: 10px;
   padding: 0px 40px;
 }
+.pengaturan .jumlah{
+  margin-bottom: 20px;
+}
 .harga{
   margin-top: 10px;
-  padding: 0px 40px;
+  padding: 0px 40px 15px 40px;
 }
  input[type=file]{
     color:transparent;
@@ -122,7 +125,11 @@ margin-right:5px;
 .drag-drop-first-page#dragandrophandler{
   height: 250px;
   min-height: 100px;
-  padding-top:100px;
+  padding-top:85px;
+}
+
+.drag-drop-mainpage#dragandrophandler{
+  padding-top:25px;
 }
 
 .jumbotron.jumbotron-firstpage{
@@ -134,4 +141,25 @@ margin-right:5px;
 }
 .navbar-brand{
   font-size: 26px;
+}
+
+.navbar{
+  margin-bottom: 10px;
+}
+
+.jumbotron{
+  margin-bottom: 0px;
+}
+
+.preview h3{
+  margin-top: 0px;
+}
+
+.preview-halaman{
+  margin-bottom: 5px;
+}
+
+.halaman{
+  font-size: 18px;
+  margin: 0px 10px;
 }
