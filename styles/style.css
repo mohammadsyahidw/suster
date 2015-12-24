@@ -132,3 +132,6 @@ margin-right:5px;
 .fa-times:hover{
   color: red;
 }
+.navbar-brand{
+  font-size: 26px;
+}

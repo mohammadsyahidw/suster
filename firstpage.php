@@ -10,12 +10,12 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 	<body>
-		<!--<div class='jumbotron jumbotron-firstpage'>
+		<div class='jumbotron jumbotron-firstpage'>
 
 			<div class='container'>
 				<center><p>Selamat Datang di Octoprint, print online mahasiswa Fasilkom.</p></center>
 			</div>
-		</div>-->
+		</div>
 
 		<nav class="navbar navbar-static">
    <div class="container">
