@@ -248,13 +248,14 @@ $("#keHalamanKiri").click(function(){
 
 $("#printButton").click(function(){
   if(saldo <1000){
-    alert("saldo kurang");
+    alert("Saldo anda tidak cukup");
   }
   else
   {
     saldo = saldo - 1000;
     $("#statusHistory"+yangDilihatSekarangDok).html("tercetak");
-    $("#saldo").html("Rp "+saldo);  
+    $("#saldo").html("Rp "+saldo);
+    alert("Anda telah berhasil mencetak berkas, silahkan ambil berkas di lab Babe")  
   }
   
 })

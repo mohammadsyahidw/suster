@@ -32,69 +32,64 @@
       </div>
     </div>
 </nav>
+  <div class='container'>
     <div class='row'>
-
-      <div class="col-md-3">
-        <div class='pilih-berkas border text-center'>
+      <div id="kolkiri" class="col-cus-3  border-cus">
+        <div class='pilih-berkas text-center'>
             <div id="dragandrophandler" >
                 <center><h4>Seret Berkas Di Sini</h4></center>
             </div>
-            <input type='file' title="foo">
+            <span class="btn btn-default btn-file">
+              Browse <input type="file">
+            </span>
             <div id="statusbar" class="table-responsive"></div>
             <button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button>
         </div>
-        <div class='list-file'>
-          <div id="history1" class='file border'>
+        <hr size="30">
+        <div id="" style=" height:56vh;">
+          <div class='list-file'>
             <div class="row table-responsive">
               <table class="table">
                 <thead>
-                  <tr id="contentHistory">
+                </thead>
+                <tbody>
+                  <tr id="history1" class='file'>
                     <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
                     <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
                     <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
                   </tr>
-                </thead>
-              </table>
-            </div>
-          </div>
-          <div id="history2"class='file border' hidden>
-            <div class="row table-responsive">
-              <table class="table">
-                <thead>
-                  <tr id="contentHistory">
+                  <tr id="history2"class='file' hidden>
                     <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>
                     <th><h5 id="statusHistory2">Belum Tercetak</h5></th>
                     <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
                   </tr>
-                </thead>
+                </tbody>
               </table>
             </div>
           </div>
         </div>
       </div>
-
       <div class="col-md-6">
         <div  class='preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
-          <div >
+          <div>
+            <a  href="#keHalamanKiri"><span id="keHalamanKiri" class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
             <img id="gambarberkas" class='gambar-berkas' src="assets/halaman1.JPG">
+            <a  href="#keHalamanKanan"><span id="keHalamanKanan" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
           </div>
-          <a id="keHalamanKiri" href="#"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
-          <span>Halaman</span>
-          <a id="keHalamanKanan" href="#"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
         </div>
 
       </div>
 
-      <div class="col-md-3">
-        <div class='profil border text-center'>
+      <div id="kolkanan" class="col-cusl-3 border-cusl">
+        <div class='profil text-center'>
           <div>Mohamad Syahid Wildan</div>
           <div>
               <h3>Saldo: <span id="saldo" class='label label-default'>Rp 5000</span></h3>
           </div>
         </div>
-
-        <div id="pengaturan" class='pengaturan border'>
+        <hr size="30">
+        <div id="pengaturan" class='pengaturan'>
         <form role='form'>
           <h3 class='text-center'>Pengaturan</h3>
           <div class='warna'>
@@ -144,9 +139,9 @@
           </div>
           </form>
         </div>
-
-        <div id="print" class='harga border text-center'>
-          <div class='print'>
+        <hr size="30">
+        <div id="print" class='harga text-center'>
+          <div class='print' style="margin-top: 60px;">
 
             <div>
               <h3>Harga: <span class='label label-default'>Rp 1000</span></h3>
@@ -167,10 +162,14 @@
         </div>
       </div>
     </div>
-
-
+  </div>
   </body>
   <script src="styles/js/jquery.min.js"></script>
   <script src="styles/js/dropzone.js"></script>
   <script src="styles/js/bootly.js"></script>
+  <script>
+  $(document).ready(function(){
+  $('.col-cusl-3').height($(window).height()-50);
+  });
+  </script>
 </html>
