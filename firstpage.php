@@ -21,7 +21,7 @@
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-right navbar-nav">
-            <li><a href="#">Logout</a></li>
+            <li><a href="login.html">Logout</a></li>
         </ul>
       </div>
     </div>
