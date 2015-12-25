@@ -48,32 +48,6 @@
         <hr size="30">
         <div id="" style=" height:56vh;">
           <div class='list-file'>
-            <!--div id="history1" class='file'>
-              <div class="row table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr id="contentHistory">
-                      <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
-                      <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
-                      <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-            </div>
-            <div id="history2"class='file' hidden>
-              <div class="row table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr id="contentHistory">
-                      <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>
-                      <th><h5 id="statusHistory2">Belum Tercetak</h5></th>
-                      <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
-                    </tr>
-                  </thead>
-                </table>
-              </div>
-            </div-->
             <div class="row table-responsive">
               <table class="table">
                 <thead>
@@ -95,7 +69,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-md-6">
         <div  class='preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
@@ -190,7 +163,6 @@
       </div>
     </div>
   </div>
-
   </body>
   <script src="styles/js/jquery.min.js"></script>
   <script src="styles/js/dropzone.js"></script>
