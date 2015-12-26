@@ -204,6 +204,20 @@ $(document).on('drop', function (e)
 //--------------yang wildan koding-------------------------
 var fileHasChoosen = false;
 
+var clicksRadioButton = new Array();
+    clicksRadioButton[0] = 1 //default
+$('input[name$="pengaturanHalaman"]').change(function(){
+  if(clicksRadioButton[0] == 1){
+    $('#pilihHalamanTertentu').show();
+    clicksRadioButton[0] = 0;
+  }
+  else{
+    $('#pilihHalamanTertentu').hide();
+    clicksRadioButton[0] = 1; 
+  }
+  
+});
+
 $("#unggahBerkas").hide();
 
 $('#choosefile').click(function () {

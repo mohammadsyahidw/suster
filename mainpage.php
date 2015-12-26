@@ -124,9 +124,9 @@
                 Pilih Halaman
               </label>
             </div>
-            <div class="form">
+            <div class="form" id="pilihHalamanTertentu" hidden>
               <label> Halaman:
-                <input type="text" id="optionsRadios2" placeholder="1,2,3">
+                <input type="text" id="optionsRadios2" placeholder="1,2,3 atau 1-3">
               </label>
             </div>
           </div>
@@ -136,7 +136,7 @@
               <label>
                 Jumlah Halaman
                 <!-- <div class="col-xs-4"> -->
-                  <input type="number" class="form-control" id="optionsRadios2" value='1'>
+                  <input type="number" class="form-control" id="optionsRadios2" value='1' min="0">
                 <!-- </div> -->
               </label>
             </div>
