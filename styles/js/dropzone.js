@@ -264,7 +264,7 @@ $("#keHalamanKiri").click(function(){
 
 $("#printButton").click(function(){
   if(saldo <1000){
-    alert("Saldo anda tidak cukup");
+    alert("Saldo anda tidak cukup, Silahkan isi saldo ke lab Babe");
   }
   else
   {
