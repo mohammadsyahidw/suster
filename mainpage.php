@@ -26,6 +26,9 @@
       </a>
     </div>
       <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="faq.php">FAQ</a></li>
+        </ul>
         <ul class="nav navbar-right navbar-nav">
             <li><a href="login.php">Logout</a></li>
         </ul>

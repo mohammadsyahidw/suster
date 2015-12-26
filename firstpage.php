@@ -21,7 +21,7 @@
 
       <div class="navbar-collapse collapse">
       	<ul class="nav navbar-nav">
-      		<li><a href="">Info</a></li>
+      		<li><a href="faq.php">FAQ</a></li>
       	</ul>
         <ul class="nav navbar-right navbar-nav">
             <li><a href="login.php">Logout</a></li>
@@ -60,7 +60,7 @@
 	                <tbody>
 	                  <tr id="history1" class='file'>
 	                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
-	                    <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
+	                    <th><h5 id="statusHistory1">Sudah Tercetak</h5></th>
 	                    <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
 	                  </tr>
 	                  <tr id="history2"class='file' hidden>
