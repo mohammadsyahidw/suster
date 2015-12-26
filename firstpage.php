@@ -21,30 +21,35 @@
 
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-right navbar-nav">
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="login.php">Logout</a></li>
         </ul>
       </div>
     </div>
 		</nav>
-		<div class='jumbotron jumbotron-firstpage'>
-
-			<div class='container'>
-				<center><p>Selamat Datang di Octoprint, print online mahasiswa Fasilkom.</p></center>
-			</div>
-		</div>
 		<div class='container'>
-			<div class='pilih-berkas text-center'>
+			<div class='jumbotron jumbotron-firstpage'>
+				<center><h4>
+					Selamat Datang di Octoprint, print online untuk mahasiswa Fasilkom UI.
+					Octoprint saat ini dikelola oleh lembaga asisten di lab Babe</h4>
+				</center>
+			</div>
+			<div class='profil text-center'>
+	          <div>Mohamad Syahid Wildan</div>
+	          <div>
+	              <h3>Saldo: <span id="saldo" class='label label-default'>Rp 5000</span></h3>
+	          </div>
+	        </div>
+	        <div class='pilih-berkas text-center'>
 	            <div id="dragandrophandler" class="drag-drop-first-page">
 	                <center><h4>Seret Berkas Di Sini</h4></center>
 	            </div>
 	            <!--<center><input type='file' title="foo"></center>-->
-							<span class="btn btn-default btn-file">
-    Browse <input type="file">
-</span>
+				<span class="btn btn-default btn-file">Browse <input type="file"></span>
 	            <div id="statusbar" class="table-responsive"></div>
 	            <a href="mainpage.php"><button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button></a>
 	        </div>
 		</div>
+		
 	</body>
 	 <script src="styles/js/jquery.min.js"></script>
 	<script src="styles/js/dropzone.js"></script>

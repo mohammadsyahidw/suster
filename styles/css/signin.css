@@ -1,7 +1,12 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: white;
+  background-color: #7CD;
+  background: url("../../assets/gambarNgeprint.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .form-signin {
@@ -41,4 +46,19 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.thumbnail.thumbnail-login-page{
+  background-color: #7CD;
+  border: 0px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.jumbotron.jumbotron-login{
+  background-color: #7CD;
+}
+.container{
+  background-color: #7CD;
+  max-width: 700px; 
 }
