@@ -20,14 +20,14 @@
     <nav class="navbar navbar-static">
    <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#" target="ext"><b>Octoprint</b></a>
+      <a class="navbar-brand" href=""><b>Octoprint</b></a>
       <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="glyphicon glyphicon-chevron-down"></span>
       </a>
     </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-right navbar-nav">
-            <li><a href="login.html">Logout</a></li>
+            <li><a href="login.php">Logout</a></li>
         </ul>
       </div>
     </div>
@@ -48,6 +48,7 @@
         <hr size="30">
         <div id="" style=" height:56vh;">
           <div class='list-file'>
+            <h4>Riwayat</h4>
             <div class="row table-responsive">
               <table class="table">
                 <thead>
@@ -70,11 +71,14 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div  class='preview text-center'>
+        <div class='row preview text-center'>
           <h3 id="judulPrintPreview">Berkas1.pdf</h3>
           <div>
-            <a  href="#keHalamanKiri"><span id="keHalamanKiri" class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
             <img id="gambarberkas" class='gambar-berkas' src="assets/halaman1.JPG">
+          </div>
+          <div>
+            <a  href="#keHalamanKiri"><span id="keHalamanKiri" class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+            <span id="keteranganHalaman">Halaman 1 dari 2</span>
             <a  href="#keHalamanKanan"><span id="keHalamanKanan" class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
           </div>
         </div>

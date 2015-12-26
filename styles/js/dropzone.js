@@ -238,12 +238,14 @@ $("#keHalamanKanan").click(function(){
   if(!fileHasChoosen){
     $("#gambarberkas").attr("src", fotoHalamanDua);
   }
+  $("#keteranganHalaman").html("Halaman 2 dari 2");
 })
 
 $("#keHalamanKiri").click(function(){
   if(!fileHasChoosen){
     $("#gambarberkas").attr("src", fotoHalamanSatu);
   }
+  $("#keteranganHalaman").html("Halaman 1 dari 2");
 })
 
 $("#printButton").click(function(){

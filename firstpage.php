@@ -20,6 +20,9 @@
     </div>
 
       <div class="navbar-collapse collapse">
+      	<ul class="nav navbar-nav">
+      		<li><a href="">Info</a></li>
+      	</ul>
         <ul class="nav navbar-right navbar-nav">
             <li><a href="login.php">Logout</a></li>
         </ul>
@@ -48,6 +51,27 @@
 	            <div id="statusbar" class="table-responsive"></div>
 	            <a href="mainpage.php"><button id="unggahBerkas" class='btn btn-default'>Unggah Berkas</button></a>
 	        </div>
+	        <div class='list-file'>
+	            <h4>Riwayat</h4>
+	            <div class="row table-responsive">
+	              <table class="table">
+	                <thead>
+	                </thead>
+	                <tbody>
+	                  <tr id="history1" class='file'>
+	                    <th><a href="#"><h4 id="judulHistory1">Berkas1.pdf</h4></a></th>
+	                    <th><h5 id="statusHistory1">Belum Tercetak</h5></th>
+	                    <th><a id="deleteHistoryFile-1" href='#'><i class='fa fa-times'></i></a></th>
+	                  </tr>
+	                  <tr id="history2"class='file' hidden>
+	                    <th><a href="#"><h4 id="judulHistory2">Berkas1.pdf<br>(2 halaman)</h4></a></th>
+	                    <th><h5 id="statusHistory2">Sudah Tercetak</h5></th>
+	                    <th><a id="deleteHistoryFile-2" href='#'><i class='fa fa-times'></i></a></th>
+	                  </tr>
+	                </tbody>
+	              </table>
+	            </div>
+	          </div>
 		</div>
 		
 	</body>
